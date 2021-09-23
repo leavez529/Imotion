@@ -64,7 +64,7 @@ function animate() {
 			cube.position.y = anger_r*Math.sin(i*step) ;
 			i += 1;
 			if(i>=8)
-				break;
+				return;
 		});
 
 		for(i;i<11;i++){
