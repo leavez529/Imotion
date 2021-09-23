@@ -18,12 +18,15 @@
 		color: white;
 		font-family: monospace;
 		padding: 1em;">
-			<div><input id="emotion" /></div>
+			<div><input id="emotion" placeholder={{ emotion }} /></div>
 			<form method="POST" id="img-submit">
-				<input type="file" name="file" id="img">
-				<button type="submit">submit</button>
+				<input type="file" name="img" id="img">
+				<button type="submit">submit image</button>
 			</form>
 		</div>
+		<!--Jquery Cdn -->
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"></script>
 		<script type="text/javascript">
 			$(document).on('submit', '#img-submit', function (e)
 			{
@@ -37,7 +40,7 @@
 					},
 					success: function ()
 					{
-						alert('saved');
+						alert('Submitted image! Robots will change behavior...');
 					}
 				})
 			});

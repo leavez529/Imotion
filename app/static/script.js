@@ -83,7 +83,7 @@ function animate() {
 			incr = -incr;
 		} 
     }
-    else if(emotion==="surpris"){
+    else if(emotion==="surprise"){
 		t+=0.005
 		var step = 2*Math.PI / 12;
 		var i = 0;
